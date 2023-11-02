@@ -17,37 +17,65 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
-    <!-- <div class="sign-in-contactbar">
-    <div class="sign-in-div">
-      <div class="sign-in-a">
-        <span class="sign-in-text01">
-          <span>
-            Jl. DI Panjaitan No.128, Karangreja, Purwokerto Kidul, Kec.
-            Purwokerto Sel., Kabupaten Banyumas, Jawa Tengah 5314
-          </span>
-        </span>
-      </div>
-      <div class="sign-in-frame15">
-        <div class="sign-in-div01">
-          <div class="sign-in-a1">
-            <img class="sign-in-text03" src="assets/message.svg" alt="">
-            <span class="sign-in-text04">
-              <span>Basah@gmail.com</span>
-            </span>
-          </div>
-        </div>
-        <div class="sign-in-div02">
-          <img src="../assets/facebook.svg"  class="sign-in-text06">
-          <img src="../assets/twitter.svg" class="sign-in-text07">
-          <img src="../assets/google+.svg" class="sign-in-text08">
-          <img src="../assets/instagram.svg" class="sign-in-text09">
+<!-- TOP -->
+    <div class="container-fluid d-flex" id="top">
+      <p class="my-auto" id="text1">
+        Jl. DI Panjaitan No.128, Karangreja, Purwokerto Kidul, Kec.Purwokerto
+        Sel., Kabupaten Banyumas, Jawa Tengah 5314
+      </p>
+      <div class="ms-auto" style="width: auto;">
+        <a style="color: #fff; text-decoration: none;" href="#" class="m-1">
+          <i class="far fa-envelope m-2"></i>
+          <span>Basah@gmail.com</span>
+        </a>
 
-        </div>
+        <!-- Facebook -->
+        <a
+          class="btn btn-link btn-floating text-white"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          style="padding: 6px;"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a
+          class="btn btn-link btn-floating text-white"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          style="padding: 6px;"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a
+          class="btn btn-link btn-floating text-white"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          style="padding: 6px;"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a
+          class="btn btn-link btn-floating text-white"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          style="padding: 6px;"
+          ><i class="fab fa-instagram"></i
+        ></a>
       </div>
     </div>
-  </div> -->
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg" style="background-color: #e8f5e9">
@@ -70,7 +98,6 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">News</a>
@@ -108,27 +135,34 @@
 
     <div class="sign-in-container">
       <div class="sign-in-sign-in">
-        <div
-          class="card"
-          style="width: 700px; margin: 100px auto; border-radius: 30px"
-        >
-          <div
-            class="card-body"
-            style="align-items: center; padding: 70px 200px"
-          >
-            <img
-              class="card-img"
-              src="../assets/Screenshot_2023-10-21_121056-removebg-preview 2.svg"
-              alt=""
-            />
+        <!-- login -->
+        <div class="wrapper fadeInDown">
+          <div id="formContent">
+            <!-- Tabs Titles -->
+        
+            <!-- Icon -->
+            <div class="fadeIn first">
+              <img src="../assets/Screenshot_2023-10-21_121056-removebg-preview 2.svg" id="icon" alt="User Icon" />
+            </div>
+        
+            <!-- Login Form -->
+            <!-- <form>
+              <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+              <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+              <input type="submit" class="fadeIn fourth" value="Log In">
+            </form> -->
+
             <form>
               <div class="form-floating mb-3">
                 <input
                   type="email"
-                  class="form-control"
+                  class="form-control focus-ring"
                   id="floatingInput"
                   placeholder="name@example.com"
-                  style="border-color: #79ac78"
+                  style="
+                    border-color: #79ac78;
+                    --bs-focus-ring-color: rgba(var(--bs-success-rgb), 0.25);
+                  "
                 />
                 <label for="floatingInput">Email</label>
               </div>
@@ -136,10 +170,13 @@
               <div class="form-floating">
                 <input
                   type="password"
-                  class="form-control"
+                  class="form-control focus-ring"
                   id="floatingPassword"
                   placeholder="Password"
-                  style="border-color: #79ac78"
+                  style="
+                    border-color: #79ac78;
+                    --bs-focus-ring-color: rgba(var(--bs-success-rgb), 0.25);
+                  "
                 />
                 <label for="floatingPassword">Password</label>
               </div>
@@ -175,63 +212,118 @@
                 </button>
               </div>
             </form>
+        
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+              <a class="underlineHover" href="#">Forgot Password?</a>
+            </div>
+        
           </div>
         </div>
 
-        <!-- footer -->
-        <footer class="site-footer">
-          <div class="container" style="max-width: 600px">
-            <div class="row">
-              <div class="col-sm-12 col-md-6">
-                <h6>About Us</h6>
-                <p class="text-justify">
-                  Bank Sampah merupakan sebuah layanan yang bertujuan untuk
-                  mengelola dan mendaur ulang sampah secara efisie.
-                </p>
-                <p></p>
-              </div>
 
-              <div class="col-sm-12 col-md-6">
-                <h6>Newslatter</h6>
-                <p class="text-justify">Lorem Ipsum is simply dummy text of in market the printing typesetting.</p>
-                <p></p>
-              </div>
+        <div>
 
-              <div class="col-sm-6 col-xs-12">
-                <ul class="social-icons">
-                  <li>
-                    <a class="facebook" href="#"
-                      ><i class="fa fa-facebook"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a class="twitter" href="#"
-                      ><i class="fa fa-twitter"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a class="dribbble" href="#"
-                      ><i class="fa fa-dribbble"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a class="linkedin" href="#"
-                      ><i class="fa fa-linkedin"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <hr />
-          <div class="container-fluid text-white text-center">
-            <p>
-              Copyright &copy; 2023 Sistem Bank Sampah - All Right Reserved.A product of <a href="#">PT.Bank Sampah</a>
-            </p>
-          </div>
-        </footer>
-
+        </div>
       </div>
+    </div>
+
+
+    <!-- <div>
+      <div class="group-11">
+        <div class="overlap-group-2">
+            <div class="rectangle"></div>
+            <p class="element">083 345 213 675<br />083 253 234 344</p>
+            <div class="basah-gmail-com">basah@gmail.com<br />banksampah@gmaill.com</div>
+            <p class="text-wrapper-19">Jl. Prof. M. Yamin, Karangklesem, Karangpucung, Kec. Purwokerto Sel.</p>
+            <img class="material-symbols-2" src="img/material-symbols-phone-enabled.svg" />
+            <img class="material-symbols-3" src="img/material-symbols-location-on.svg" />
+            <img class="ic-baseline-email" src="img/ic-baseline-email.svg" />
+            <img class="vector" src="img/vector-1.svg" />
+            <img class="vector-2" src="img/vector-2.svg" />
+        </div>
+        <div class="logo-wrapper">
+            <div class="logo">
+                <img class="vector-3" src="img/image.svg" />
+                <img class="screenshot-2" src="img/screenshot-2023-10-21-121056-removebg-preview-2.png" />
+            </div>
+        </div>
+      </div> -->
+
+      <!-- footer -->
+      <footer class="site-footer">
+        <div class="container" style="max-width: 600px">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>About Us</h6>
+              <p class="text-justify">
+                Bank Sampah merupakan sebuah layanan yang bertujuan untuk
+                mengelola dan mendaur ulang sampah secara efisien.
+              </p>
+              <p></p>
+            </div>
+  
+            <div class="col-sm-12 col-md-6">
+              <h6>Newslatter</h6>
+              <p class="text-justify">
+                Lorem Ipsum is simply dummy text of in market the printing
+                typesetting.
+              </p>
+              <p></p>
+            </div>
+  
+            <div class="col-sm-12 col-md-6"></div>
+  
+            <div class="col-sm-12 col-md-6" id="footer_sosmed">
+              <a
+                class="btn btn-link btn-floating"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark" 
+                style="font-size: 30px;">
+                <i class="fab fa-facebook"></i>
+              </a>
+  
+              <a
+                class="btn btn-link btn-floating"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                style="font-size: 30px;">
+                <i class="fab fa-apple"></i>
+              </a>
+  
+              <a
+                class="btn btn-link btn-floating"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                style="font-size: 30px;">
+                <i class="fab fa-twitter"></i>
+              </a>
+              
+              <a
+                class="btn btn-link btn-floating"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                style="font-size: 30px;">
+                <i class="fab fa-google"></i>
+              </a>
+  
+            </div>
+            
+          </div>
+        </div>
+        <hr />
+        <div class="container-fluid text-white text-center">
+          <p>
+            Copyright &copy; 2023 Sistem Bank Sampah - All Right Reserved.A
+            product of <a href="#">PT.Bank Sampah</a>
+          </p>
+        </div>
+      </footer>
+
     </div>
 
     <script
