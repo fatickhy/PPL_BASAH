@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign In</title>
-    <link rel="stylesheet" href="../css/sign-in.css" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/sign-up.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -143,7 +143,7 @@
         <div class="sign-in-sign-in">
           <!-- login -->
           <div class="wrapper fadeInDown">
-            <div id="formContent">
+            <div id="formContent" class="formbg">
               <!-- Tabs Titles -->
           
               <!-- Icon -->
@@ -153,6 +153,34 @@
               
               <!-- Login Form -->
               <form class="mx-4 mb-4">
+                <div class="mb-3 email1">
+                  <input
+                    type="email"
+                    class="form-control focus-ring"
+                    id="floatingInput"
+                    placeholder="Email"
+                    style="
+                      border-color: #79ac78;
+                      --bs-focus-ring-color: rgba(var(--bs-success-rgb), 0.25);
+                    "
+                  />
+                  <label for="floatingInput" class="visually-hidden">Email</label>
+                </div>
+
+                <div class="mb-3 email1">
+                  <input
+                    type="email"
+                    class="form-control focus-ring"
+                    id="floatingInput"
+                    placeholder="Email"
+                    style="
+                      border-color: #79ac78;
+                      --bs-focus-ring-color: rgba(var(--bs-success-rgb), 0.25);
+                    "
+                  />
+                  <label for="floatingInput" class="visually-hidden">Email</label>
+                </div>
+
                 <div class="mb-3 email1">
                   <input
                     type="email"
@@ -214,63 +242,6 @@
       <!-- footer -->
 
       <footer class="site-footer">
-        <div class="container-fluid" id="footer_contact" style="display: flex; justify-content: center;">
-          <div class="row" style="display: contents;">
-            <div class="col-xs-2" style="display: flex; justify-content: end; width: 40%;">
-              <div class="div_img">
-                <img src="/assets/logo_basah_daun.png" alt="">
-              </div>
-            </div>
-            <div class="col-xs-5 d-flex align-items-center" style="width: 60%; background-color: #C1EBC3; border-radius: 12px;">
-              <img src="/assets/phone.svg" style="width: 3%;">
-              <p>083-345-213-675 <br> 083-253-234-344</p>
-              <div class="garis-vertical"></div>
-              <img src="/assets/location.svg" style="padding-left: 20px; width: 6%;">
-              <p>Jl. Prof. M. Yamin, <br> Karangklesem, Karangpucung, <br> Kec. Purwokerto Sel.</p>
-              <div class="garis-vertical"></div>
-              <img src="/assets/icon_email.svg" style="padding-left: 20px; width: 7%;">
-              <p style="padding-right: 0;">basah@gmail.com <br> banksampah@gmaill.com</p>
-              <!-- <div class="d-flex align-items-center" style="width: 60%; background-color: #C1EBC3; border-radius: 12px;">
-              </div> -->
-            </div>
-          </div>
-        </div>
-
-        <!-- <div class="container-fluid d-flex" id="footer_contact"> 
-          <div class="container box div_img" style="height: 100px;">
-            <img src="/assets/logo_basah_daun.png">
-          </div>
-          <div class="d-flex div2">
-            <img src="/assets/phone.svg">
-            <p>083-345-213-675 <br> 083-253-234-344</p>
-            <div class="garis-vertical"></div>
-            <img src="/assets/location.svg" style="padding-left: 20px;">
-            <p>Jl. Prof. M. Yamin, <br> Karangklesem, Karangpucung, <br> Kec. Purwokerto Sel.</p>
-            <div class="garis-vertical"></div>
-            <img src="/assets/icon_email.svg" style="padding-left: 20px;">
-            <p style="padding-right: 0;">basah@gmail.com <br> banksampah@gmaill.com</p>
-          </div>
-        </div> -->
-
-        <!-- Footer Contact -->
-        <!-- <div class="row justify-content-center" id="footer_contact">
-          <div class="col-4" style="width: 300px;">
-            <div class="card" style="background-color: #539407;">
-              <div class="card-body">
-                <img src="/assets/logo_basah_daun.png" alt="logo basah">
-              </div>
-            </div>
-          </div>
-          <div class="col-9">
-            <div class="card" style="background-color: #C1EBC3;">
-              <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-              </div>
-            </div>
-          </div>
-        </div> -->
-        <!-- End Footer Contact -->
-
         <!-- Footer About Us -->
         <div class="container" style="max-width: 600px">
           <div class="row">
@@ -357,54 +328,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="/js/sign-in.js"></script>
-
-    <!-- jquery 3.5.1 -->
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#show-password').click(function() {
-                if ($(this).is(':checked')) {
-                    $('#floatingPassword').attr('type', 'text');
-                } else {
-                    $('#floatingPassword').attr('type', 'password');
-                }
-            });
-        });
-    </script>
-
-<script>
-  // membuat fungsi change
-  function change() {
-
-      // membuat variabel berisi tipe input dari id='pass', id='pass' adalah form input password 
-      var x = document.getElementById('pass').type;
-
-      //membuat if kondisi, jika tipe x adalah password maka jalankan perintah di bawahnya
-      if (x == 'password') {
-
-          //ubah form input password menjadi text
-          document.getElementById('pass').type = 'text';
-          
-          //ubah icon mata terbuka menjadi tertutup
-          document.getElementById('mybutton').innerHTML = `<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye-slash-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                          <path d="M10.79 12.912l-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.029 7.029 0 0 0 2.79-.588zM5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.089z"/>
-                                                          <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829l-2.83-2.829zm4.95.708l-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829z"/>
-                                                          <path fill-rule="evenodd" d="M13.646 14.354l-12-12 .708-.708 12 12-.708.708z"/>
-                                                          </svg>`;
-      }
-      else {
-
-          //ubah form input password menjadi text
-          document.getElementById('pass').type = 'password';
-
-          //ubah icon mata terbuka menjadi tertutup
-          document.getElementById('mybutton').innerHTML = `<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                          <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-                                                          <path fill-rule="evenodd" d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-                                                          </svg>`;
-      }
-  }
-</script> -->
 
   </body>
 </html>

@@ -45,31 +45,47 @@ nav #navbarTogglerDemo02 ul li a:hover{
 }
 /* End Navbar */
 
-/* Start Login Form */
+/* Start Form */
+#icon {
+  width:40%;
+}
+
+section .formbg{
+  max-width: 1100px!important;
+}
+
 form i {
   margin-left: -30px;
   cursor: pointer;
   vertical-align: 0!important;
 }
 
+form .email1{
+  display: flex;
+  justify-content: center;
+}
+
 form .email1 input{
   padding: 1rem 0.75rem;
+  width: 60%;
 }
 
 form .pass{
-  margin-left: -0.3rem;
-  margin-right: 0.3rem;
+  margin-left: -0.43rem;
+  margin-right: 0.44rem;
+  display: flex;
+  justify-content: center;
 }
 
 form .pass input{
   border: var(--bs-border-width) solid var(--bs-border-color);
   border-color: #79ac78;
   border-radius: 0.4rem;
-  width: 100%;
+  width: 60%;
   padding: 1rem 0.75rem;
   text-align: left;
 }
-/* End Login Form */
+/* End Form */
 
 /* form search */
 form.example input[type=text] {
@@ -1255,13 +1271,13 @@ h2 {
 
 #formContent {
   -webkit-border-radius: 10px 10px 10px 10px;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 50px;
   background: #fff;
   padding: 30px;
-  width: 90%;
+  width: 60%;
   max-width: 450px;
   position: relative;
-  padding: 0px;
+  /* padding: 0px; */
   -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
   box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
   text-align: center;
@@ -1468,7 +1484,3 @@ input[type=text]:placeholder {
 *:focus {
     outline: none;
 } 
-
-#icon {
-  width:60%;
-}
