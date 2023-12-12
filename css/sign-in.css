@@ -52,13 +52,17 @@ form i {
   vertical-align: 0!important;
 }
 
+form::placeholder{
+  color: #0F4229;
+}
+
 form .email1 input{
   padding: 1rem 0.75rem;
 }
 
 form .pass{
-  margin-left: -0.3rem;
-  margin-right: 0.3rem;
+  margin-left: -1.0rem;
+  margin-right: 0.9rem;
 }
 
 form .pass input{
@@ -66,7 +70,7 @@ form .pass input{
   border-color: #79ac78;
   border-radius: 0.4rem;
   width: 100%;
-  padding: 1rem 0.75rem;
+  padding: 0.98rem 0.75rem;
   text-align: left;
 }
 /* End Login Form */
@@ -1472,3 +1476,4 @@ input[type=text]:placeholder {
 #icon {
   width:60%;
 }
+

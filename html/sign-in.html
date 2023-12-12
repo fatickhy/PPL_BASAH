@@ -24,11 +24,18 @@
     <link rel="stylesheet"
 		href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+
   </head>
   <body>
 <!-- TOP -->
     <div class="container-fluid d-flex" id="top">
-      <p class="my-auto" id="text1">
+      <p class="my-auto" id="text1" style="font-family: 'Rubik';">
         Jl. DI Panjaitan No.128, Karangreja, Purwokerto Kidul, Kec.Purwokerto
         Sel., Kabupaten Banyumas, Jawa Tengah 5314
       </p>
@@ -87,7 +94,7 @@
           class="navbar-brand"
           src="../assets/Screenshot_2023-10-21_121056-removebg-preview 2.svg"
           alt="logo basah"
-          style="width: 100px"
+          style="width: 100px; position: relative; left: 100px;"
         />
         <button
           class="navbar-toggler"
@@ -100,7 +107,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="font-family: 'Rubik', sans-serif; font-weight: 500;">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">News</a>
@@ -140,10 +147,10 @@
 
     <section>
       <div class="sign-in-container">
-        <div class="sign-in-sign-in">
+        <div class="sign-in-sign-in" style="height: 600px;">
           <!-- login -->
           <div class="wrapper fadeInDown">
-            <div id="formContent">
+            <div id="formContent" style="bottom: 8  0px;">
               <!-- Tabs Titles -->
           
               <!-- Icon -->
@@ -169,7 +176,7 @@
 
                 <div class="pass">
                   <input type="password"  name="password" id="password" placeholder="Password"/>
-                  <i class="bi bi-eye-slash" id="togglePassword" onclick="change()"></i>
+                  <i onclick="change()"></i>
                 </div>
 
                 <div class="d-flex">
@@ -210,31 +217,14 @@
         </div>
       </div>
     </section>
-
       <!-- footer -->
 
       <footer class="site-footer">
-        <div class="container-fluid" id="footer_contact" style="display: flex; justify-content: center;">
-          <div class="row" style="display: contents;">
-            <div class="col-xs-2" style="display: flex; justify-content: end; width: 40%;">
-              <div class="div_img">
-                <img src="/assets/logo_basah_daun.png" alt="">
-              </div>
-            </div>
-            <div class="col-xs-5 d-flex align-items-center" style="width: 60%; background-color: #C1EBC3; border-radius: 12px;">
-              <img src="/assets/phone.svg" style="width: 3%;">
-              <p>083-345-213-675 <br> 083-253-234-344</p>
-              <div class="garis-vertical"></div>
-              <img src="/assets/location.svg" style="padding-left: 20px; width: 6%;">
-              <p>Jl. Prof. M. Yamin, <br> Karangklesem, Karangpucung, <br> Kec. Purwokerto Sel.</p>
-              <div class="garis-vertical"></div>
-              <img src="/assets/icon_email.svg" style="padding-left: 20px; width: 7%;">
-              <p style="padding-right: 0;">basah@gmail.com <br> banksampah@gmaill.com</p>
-              <!-- <div class="d-flex align-items-center" style="width: 60%; background-color: #C1EBC3; border-radius: 12px;">
-              </div> -->
-            </div>
-          </div>
-        </div>
+        
+            <!-- footer logo-basah -->
+        
+        <!-- footer logo-basah -->
+
 
         <!-- <div class="container-fluid d-flex" id="footer_contact"> 
           <div class="container box div_img" style="height: 100px;">
