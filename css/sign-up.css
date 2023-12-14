@@ -1270,8 +1270,7 @@ h2 {
 }
 
 #formContent {
-  -webkit-border-radius: 10px 10px 10px 10px;
-  border-radius: 50px;
+  border-radius: 10px 10px;
   background: #fff;
   padding: 30px;
   width: 60%;
