@@ -41,28 +41,91 @@ nav #navbarTogglerDemo02 ul li a:hover{
 }
 /* End Navbar */
 
-/* Start isi*/
-.section{
-    margin: 2rem 0;
+/* Start Form */
+@media (max-width: 760px) {
+    .section{
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+    }
+
+    .image{
+      margin: 2rem;
+    }
+
+    .section .col-6{
+      width: 80%;
+    }
+  }  
+
+.intro .jenis_kelamin{
+  height: 10%;
+  display: flex;
+  align-items: center;
 }
 
-.section svg{
-    height: 2.5em;
-    width: 3em;
-    cursor: pointer;
+.intro .jenis_kelamin h6{
+  margin: 0;
 }
 
-.section svg:hover
-{
-  color:#79AC78;
-  text-decoration:none;
+/* @media (max-width: 1521px) {
+  .intro .col-2{
+    width: 50%;
+  }
+} */
+
+h1 {
+  font-size: 1.5vw;
+  display: flex;
+  justify-content: center;
+  margin: 3rem!important;
+
 }
 
-.section p{
-  font-size: 1vw;
+.image{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-/* End isi */
+img{
+  width: 60%;
+}
+
+.section .col-8{
+  display: flex;
+  justify-content: center;
+}
+
+.intro {
+  margin-bottom: 10rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.intro .card{
+  width: 100%;
+  background-color: #E4E4E4;
+  border-radius: 10px;
+}
+
+.form-outline input{
+  margin: 1rem 0;
+}
+
+.form-outline textarea{
+  margin: 1rem 0;
+  height: 15rem;
+}
+
+.intro .btn{
+  margin: 2rem;
+  background-color: #28B446;
+  border-color: #28B446!important;
+}
+
+/* End Form */
 
 /* Footer */
 .site-footer
