@@ -3,17 +3,17 @@
     background-color: rgba(83, 148, 7, 1);
   }
   
-  #top p{
-    color: rgba(255, 255, 255, 1);
-    height: auto;
-    font-size: 14px;
-    font-style: Medium;
-    text-align: left;
-    font-family: Rubik;
-    font-weight: 500;
-    line-height: 30px;
-    font-stretch: normal;
-  }
+#top p{
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  font-size: 14px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Rubik;
+  font-weight: 500;
+  line-height: 30px;
+  font-stretch: normal;
+}
   
   @media (max-width: 1005px) {
     #top #text1{
@@ -35,39 +35,87 @@
       align-items: center;
     }
   }
+
+ .navbar-collapse{
+  flex-grow: 0!important;
+ } 
   
 nav #navbarTogglerDemo02 ul li a:hover{
     color: #79AC78;
 }
 /* End Navbar */
 
-/* Start isi*/
-.section{
-    margin: 2rem 0;
+/* STRUCTURE */
+#gradient {
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(79,189,11,86%));
 }
 
-.section svg{
-    height: 2.5em;
-    width: 3em;
-    cursor: pointer;
+#gradient h1{
+    /* font-family: "Jost-LightItalic", Helvetica; */
+    font-weight: 300;
+    font-style: italic;
+    color: #000000;
+    font-size: 3vw;
+    letter-spacing: 0;
+    line-height: normal;
+    width: 55vw;
 }
 
-.section svg:hover
-{
-  color:#79AC78;
-  text-decoration:none;
+#gradient h3{
+    /* font-family: "Jost-LightItalic", Helvetica; */
+    font-weight: 300;
+    font-style: italic;
+    color: rgba(39, 71, 34, 1);
+    font-size: 2vw;
+    letter-spacing: 0;
+    line-height: normal;
+    padding-top: 1rem;
+    width: 45vw;
 }
 
-.section p{
-  font-size: 1vw;
+#gradient .text1{
+    margin-top: 25%;
+    background-color: #539407;
+    color: #fff;
+    width: fit-content;
+    border-radius: 27px;
+    align-items: center;
+    font-size: 1.5vw;
+    text-align: center;
 }
 
-/* End isi */
+#gradient img{
+    width: 100%;
+}
+
+.section1 h1{
+    display: flex;
+    justify-content: center;
+    margin: 10rem 0 2rem 0;
+    font-family: 'Rowdies', sans-serif;
+}
+
+.section1 .bg{
+    background-color: #0F4229;
+    position: relative;
+}
+
+.section1 h3{
+  color: #28B446;
+  margin-bottom: 0;
+}
+
+.section1 a i{
+  font-size: 3rem;
+  color: #23AA49;
+}
+
+/* END STRUCTURE */
 
 /* Footer */
 .site-footer
 {
-  background-image: url(../assets/bgfooter.svg);
+  background-image: url(../../assets/bgfooter.svg);
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
