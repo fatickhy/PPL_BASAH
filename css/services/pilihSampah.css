@@ -79,9 +79,8 @@ nav #navbarTogglerDemo02 ul li a:hover{
   line-height: 200%;
 }
 
-.container .col-3{
+.section2 .col-3{
   display: flex;
   justify-content: end;
 }
-
 /* End isi */
