@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services</title>
     <link rel="stylesheet" href="../../css/services/pesanan.css" />
+    <link rel="stylesheet" href="../../css/navbar&top.css">
+    <link rel="stylesheet" href="../../css/footer.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -40,7 +42,7 @@
           <i class="far fa-envelope m-2"></i>
           <span>Basah@gmail.com</span>
         </a>
-
+    
         <!-- Facebook -->
         <a
           class="btn btn-link btn-floating text-white"
@@ -50,7 +52,7 @@
           style="padding: 6px;"
           ><i class="fab fa-facebook-f"></i
         ></a>
-  
+    
         <!-- Twitter -->
         <a
           class="btn btn-link btn-floating text-white"
@@ -60,7 +62,7 @@
           style="padding: 6px;"
           ><i class="fab fa-twitter"></i
         ></a>
-  
+    
         <!-- Google -->
         <a
           class="btn btn-link btn-floating text-white"
@@ -70,7 +72,7 @@
           style="padding: 6px;"
           ><i class="fab fa-google"></i
         ></a>
-  
+    
         <!-- Instagram -->
         <a
           class="btn btn-link btn-floating text-white"
@@ -82,72 +84,76 @@
         ></a>
       </div>
     </div>
-
+    
     <!-- Start Navbar -->
     <nav class="navbar navbar-expand-lg" style="background-color: #e8f5e9">
       <div class="container-fluid">
         <img
-          class="navbar-brand"
-          src="../../assets/Screenshot_2023-10-21_121056-removebg-preview 2.svg"
-          alt="logo basah"
-          style="width: 100px"
+        class="navbar-brand"
+        src="../assets/Screenshot_2023-10-21_121056-removebg-preview 2.svg"
+        alt="logo basah"
+        style="width: 100px"
         />
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-          >
-          <span class="navbar-toggler-icon"></span>
-        </button>
         
-        
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Education</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Services</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Help</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Contact</a
-              >
-            </li>
-          </ul>
-
-          <div class="d-grid gap-2" id="button_sign_in">
-            <button
-              class="btn btn-outline-success"
-              type="submit"
-              fdprocessedid="addvtc"
-            >
-              SignUp
+        <div class="d-flex reverse">
+          <div class="dropdown-center">
+            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16" style="font-size: xx-large;">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+              </svg>
             </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="../profile.html">Profil</a></li>
+              <li><a class="dropdown-item" href="../alamat.html">Alamat</a></li>
+              <li><a class="dropdown-item" href="../transaksi.php">Transaksi</a></li>
+              <li><a class="dropdown-item" href="../../index.html">Log out</a></li>
+            </ul>
           </div>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="news.php">Berita</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="education.php"
+                  >Edukasi</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#footer">Bantuan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#footer"
+                  >Kontak</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Berita</a></li>
+            <li><a class="dropdown-item" href="#">Edukasi</a></li>
+            <li><a class="dropdown-item" href="#">Services</a></li>
+            <li><a class="dropdown-item" href="#">Bantuan</a></li>
+            <li><a class="dropdown-item" href="#">Kontak</a></li>
+          </ul>
         </div>
       </div>
     </nav>
     <!-- End Navbar -->
-    
 
     <!-- STRUCTURE -->
     <div id="gradient" class="container-fluid">
@@ -156,7 +162,9 @@
                 <h1>Pengantaran yang sudah tersedia di 5 kecamatan</h1>
                 <h3>"Mudah, Cepat, dan Ramah Lingkungan: Antar Sampah Tanpa Repot"</h3>
                 <div class="text1 px-4">
-                    <p>Ayo Lakukan Pengantaran Sampahmu</p>
+                  <a href="pilihSampah.html" style="text-decoration: none;">
+                    <button type="button" class="btn">Ayo Lakukan Pengantaran Sampahmu</button>
+                  </a>
                 </div>
             </div>
             <div class="col-5">
@@ -170,87 +178,57 @@
       <div class="container-xxl mx-auto bg">
           <div class="row">
               <div class="col-lg-4 col-sm-6 py-4 d-flex justify-content-center">
-                  <div class="card" style="width: 18rem;">
+                  <div class="card">
                     <img src="../../assets/sampah_plastik.png" class="card-img-top" style="height: 14rem;">
                     <div class="card-body">
                       <h5 class="card-title">Sampah Plastik</h5>
-                      <h3>1kg, 40RP</h3>
-                      <div class="d-flex justify-content-end">
-                        <a href="#">
-                          <i class="bi bi-plus-circle-fill"></i>
-                        </a>
-                      </div>
+                      <h4>1kg, 40RP</h4>
                     </div>
                   </div>
                 </div>
                   
               <div class="col-lg-4 col-sm-6 py-4 d-flex justify-content-center">
-                  <div class="card" style="width: 18rem;">
+                  <div class="card">
                       <img src="../../assets/sampah_kertas.png" class="card-img-top" style="height: 14rem;">
                       <div class="card-body">
                         <h5 class="card-title">Sampah Kertas</h5>
-                        <h3>1kg, 40RP</h3>
-                        <div class="d-flex justify-content-end">
-                          <a href="#">
-                            <i class="bi bi-plus-circle-fill"></i>
-                          </a>
-                        </div>
+                        <h4>1kg, 40RP</h4>
                       </div>
                     </div>
               </div>
               <div class="col-lg-4 col-sm-6 py-4 d-flex justify-content-center">
-                  <div class="card" style="width: 18rem;">
+                  <div class="card">
                       <img src="../../assets/sampah_kaca.png" class="card-img-top" style="height: 14rem;">
                       <div class="card-body">
                         <h5 class="card-title">Sampah Kaca</h5>
-                        <h3>1kg, 40RP</h3>
-                        <div class="d-flex justify-content-end">
-                          <a href="#">
-                            <i class="bi bi-plus-circle-fill"></i>
-                          </a>
-                        </div>
+                        <h4>1kg, 40RP</h4>
                       </div>
                     </div>
               </div>
-              <div class="col-lg-4 col-sm-6 pb-4 d-flex justify-content-center">
-                  <div class="card" style="width: 18rem;">
+              <div class="col-lg-4 col-sm-6 py-4 d-flex justify-content-center">
+                  <div class="card">
                       <img src="../../assets/sampah_besi.png" class="card-img-top" style="height: 14rem;">
                       <div class="card-body">
                         <h5 class="card-title">Sampah Besi</h5>
-                        <h3>1kg, 40RP</h3>
-                        <div class="d-flex justify-content-end">
-                          <a href="#">
-                            <i class="bi bi-plus-circle-fill"></i>
-                          </a>
-                        </div>
+                        <h4>1kg, 40RP</h4>
                       </div>
                     </div>
               </div>
               <div class="col-lg-4 col-sm-6 pb-4 d-flex justify-content-center">
-                  <div class="card" style="width: 18rem;">
+                  <div class="card">
                       <img src="../../assets/sampah_organik.png" class="card-img-top" style="height: 14rem;">
                       <div class="card-body">
                         <h5 class="card-title">Sampah Organik</h5>
-                        <h3>1kg, 40RP</h3>
-                        <div class="d-flex justify-content-end">
-                          <a href="#">
-                            <i class="bi bi-plus-circle-fill"></i>
-                          </a>
-                        </div>
+                        <h4>1kg, 40RP</h4>
                       </div>
                     </div>
               </div>
               <div class="col-lg-4 col-sm-6 pb-4 d-flex justify-content-center">
-                  <div class="card" style="width: 18rem;">
+                  <div class="card">
                       <img src="../../assets/sampah_elektronik.png" class="card-img-top" style="height: 14rem;">
                       <div class="card-body">
                         <h5 class="card-title">Sampah Elektronik</h5>
-                        <h3>1kg, 40RP</h3>
-                        <div class="d-flex justify-content-end">
-                          <a href="#">
-                            <i class="bi bi-plus-circle-fill"></i>
-                          </a>
-                        </div>
+                        <h4>1kg, 40RP</h4>
                       </div>
                     </div>
               </div>
@@ -267,7 +245,7 @@
       
     <!-- END STRUCTURE -->
     <!-- Footer -->
-    <footer class="site-footer">
+    <footer class="site-footer" id="footer">
       <div class="container" style="max-width: 600px">
         <div class="row">
           <div class="col-sm-12 col-md-6">
